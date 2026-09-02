@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joyería Destiny — Manillas premium hechas a mano en Colombia</title>
+  <meta name="description" content="Joyería Destiny. Manillas en plata ley 925 y acero dorado, hechas a mano en Colombia. Piezas con carácter, personalizables y con entrega a todo el país." />
+  <meta name="theme-color" content="#070B16" />
+  <link rel="canonical" href="https://joyeriadestiny.com/" />
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, Instagram, Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:site_name" content="Joyería Destiny" />
+  <meta property="og:url" content="https://joyeriadestiny.com/" />
+  <meta property="og:title" content="Joyería Destiny — Manillas hechas a mano en Colombia" />
+  <meta property="og:description" content="Manillas en plata ley 925 y acero dorado, tejidas a mano y personalizables. Entrega a todo el país." />
+  <meta property="og:image" content="https://joyeriadestiny.com/img/hero.jpg" />
+  <meta property="og:image:alt" content="Manilla de plata 925 de Joyería Destiny" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Marca que el JavaScript está activo. Debe ir aquí arriba para que la
+       página no parpadee: sin esta clase, todo se muestra visible por defecto. -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="icon" href="img/logo.png" type="image/png" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS · compilado a un archivo local, sin depender de ningún CDN.
+       La paleta y las tipografías viven ahora en tailwind.config.js.
+       Para regenerarlo tras editar el HTML:  npm run build   (ver README.md) -->
+  <link rel="stylesheet" href="tailwind.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-obsidian text-ivory font-sans antialiased selection:bg-gold/30">
+
+  <!-- Icono de WhatsApp definido una sola vez y reutilizado en toda la página -->
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <symbol id="ico-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.174.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.898 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  </svg>
+
+  <!-- ============ MOMENTO DE ENTRADA ============ -->
+  <div id="entry" class="fixed inset-0 z-[100] bg-obsidian flex items-center justify-center">
+    <div class="text-center px-6">
+      <img src="img/logo.png" alt="Joyería Destiny" class="w-40 sm:w-52 mx-auto entry-logo" />
+      <p class="mt-2 text-[10px] tracking-luxe uppercase text-gold/70 entry-tag">Joyería · Colombia</p>
+    </div>
+  </div>
+
+
+  <!-- Salto directo al contenido (accesibilidad / teclado) -->
+  <a href="#inicio" class="skip-link">Ir al contenido</a>
+
+  <!-- ============ HEADER ============ -->
+  <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+      <div class="flex items-center justify-between h-20 lg:h-24">
+
+        <a href="#inicio" class="flex items-center gap-3 group" aria-label="Joyería Destiny — inicio">
+          <img src="img/logo.png" alt="" class="h-11 lg:h-12 w-auto object-contain" />
+          <span class="hidden sm:block leading-none">
+            <span class="block font-display text-xl lg:text-2xl tracking-[0.18em] text-gradient-gold">DESTINY</span>
+            <span class="block text-[9px] tracking-luxe uppercase text-ash mt-1">Joyería</span>
+          </span>
+        </a>
+
+        <!-- Navegación de escritorio -->
+        <nav class="hidden md:flex items-center gap-9" aria-label="Navegación principal">
+          <a href="#catalogo" class="nav-link text-[11px] tracking-[0.25em] uppercase text-ash hover:text-gold transition-colors duration-300">Colección</a>
+          <a href="#casa" class="nav-link text-[11px] tracking-[0.25em] uppercase text-ash hover:text-gold transition-colors duration-300">La Casa</a>
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20piezas."
+             target="_blank" rel="noopener"
+             class="text-[11px] tracking-[0.25em] uppercase text-ivory border border-gold/40 hover:border-gold hover:text-gold px-5 py-3 transition-all duration-300">
+            Contacto
+          </a>
+        </nav>
+
+        <!-- Botón de menú (solo móvil y tablet pequeña) -->
+        <button type="button" id="navToggle" class="nav-toggle"
+                aria-expanded="false" aria-controls="navMobile" aria-label="Abrir menú">
+          <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+
+      </div>
+      <div class="h-px w-full bg-gradient-to-r from-transparent via-gold/25 to-transparent"></div>
+    </div>
+  </header>
+
+  <!-- ============ MENÚ MÓVIL ============ -->
+  <div id="navMobile" class="nav-mobile">
+    <nav class="nav-mobile-inner" aria-label="Navegación móvil">
+      <a href="#inicio"   class="nav-mobile-link">Inicio</a>
+      <a href="#catalogo" class="nav-mobile-link">Colección</a>
+      <a href="#casa"     class="nav-mobile-link">La Casa</a>
+      <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20piezas." target="_blank" rel="noopener" class="nav-mobile-cta">
+        <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ico-wa" /></svg>
+        <span>Escríbenos por WhatsApp</span>
+      </a>
+    </nav>
+  </div>
+
+  <main id="contenido">
+
+  <!-- ============ HERO ============ -->
+  <section id="inicio" class="relative min-h-[100svh] flex items-center overflow-hidden">
+
+    <!-- Fondo -->
+    <div class="absolute inset-0">
+      <img src="img/hero.jpg" alt="Manilla de plata 925 Joyería Destiny" class="w-full h-full object-cover object-center hero-img" />
+      <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/85 to-obsidian/40"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-obsidian/80"></div>
+      <div class="absolute inset-0 aura"></div>
+      <div class="absolute inset-0 vignette"></div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-10 w-full pt-28 pb-24">
+      <div class="max-w-2xl">
+
+        <div class="flex items-center gap-4 reveal">
+          <span class="h-px w-12 bg-gradient-to-r from-gold to-transparent"></span>
+          <span class="text-[10px] tracking-luxe uppercase text-gold/90">Colección Privada</span>
+        </div>
+
+        <h1 class="mt-8 font-display font-light leading-[0.95] text-[3.25rem] sm:text-7xl lg:text-[5.5rem] reveal reveal-d1">
+          El carácter<br />
+          <span class="text-gradient-gold italic">no se improvisa.</span>
+        </h1>
+
+        <p class="mt-8 max-w-lg text-base sm:text-lg font-light leading-relaxed text-ash reveal reveal-d2">
+          Manillas tejidas a mano en plata ley 925 y acero, para quienes no necesitan levantar la voz.
+          Piezas sobrias, materiales nobles y un detalle que solo notan los que saben.
+        </p>
+
+        <!-- CTAs -->
+        <div class="mt-12 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 reveal reveal-d3">
+
+          <!-- CTA 1 · WhatsApp -->
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa%20personalizada."
+             target="_blank" rel="noopener"
+             class="btn-wa group relative inline-flex items-center justify-center gap-3 px-8 py-4 overflow-hidden">
+            <svg class="w-5 h-5 shrink-0 relative z-10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ico-wa" /></svg>
+            <span class="relative z-10 text-[11px] tracking-[0.28em] uppercase font-medium">Escríbenos por WhatsApp</span>
+          </a>
+
+          <!-- CTA 2 · Catálogo -->
+          <a href="#catalogo"
+             class="btn-ghost group inline-flex items-center justify-center gap-3 px-8 py-4">
+            <span class="text-[11px] tracking-[0.28em] uppercase">Ver el catálogo</span>
+            <svg class="w-4 h-4 transition-transform duration-500 group-hover:translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M12 4v16M6 14l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicador scroll -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-3">
+      <span class="text-[9px] tracking-luxe uppercase text-ash/80">Desliza</span>
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+
+  <!-- ============ FRANJA DE VALORES ============ -->
+  <section class="border-y border-white/5 bg-carbon">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+      <div class="grid grid-cols-2 lg:grid-cols-4">
+        <div class="py-8 px-5 text-center reveal">
+          <p class="font-display text-2xl text-gradient-gold">Hecho a mano</p>
+          <p class="mt-2 text-[10px] tracking-[0.25em] uppercase text-ash">Pieza por pieza</p>
+        </div>
+        <div class="py-8 px-5 text-center border-l border-white/5 reveal reveal-d1">
+          <p class="font-display text-2xl text-gradient-gold">Materiales nobles</p>
+          <p class="mt-2 text-[10px] tracking-[0.25em] uppercase text-ash">Plata 925 · Acero dorado</p>
+        </div>
+        <div class="py-8 px-5 text-center border-t lg:border-t-0 lg:border-l border-white/5 reveal reveal-d2">
+          <p class="font-display text-2xl text-gradient-gold">Hecha a tu medida</p>
+          <p class="mt-2 text-[10px] tracking-[0.25em] uppercase text-ash">Color, grosor y balines a gusto</p>
+        </div>
+        <div class="py-8 px-5 text-center border-t lg:border-t-0 border-l border-white/5 reveal reveal-d3">
+          <p class="font-display text-2xl text-gradient-gold">Toda Colombia</p>
+          <p class="mt-2 text-[10px] tracking-[0.25em] uppercase text-ash">Entrega discreta</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ CATÁLOGO ============ -->
+  <section id="catalogo" class="relative py-24 lg:py-32 bg-obsidian">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+
+      <!-- Encabezado de sección -->
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <div class="flex items-center justify-center gap-4">
+          <span class="h-px w-10 bg-gradient-to-r from-transparent to-gold/60"></span>
+          <span class="text-[10px] tracking-luxe uppercase text-gold/90">La Colección</span>
+          <span class="h-px w-10 bg-gradient-to-l from-transparent to-gold/60"></span>
+        </div>
+        <h2 class="mt-7 font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-tight">
+          Piezas que <span class="italic text-gradient-gold">hablan por ti</span>
+        </h2>
+        <p class="mt-6 text-ash font-light leading-relaxed">
+          Nuestra colección completa de manillas, organizada por material y por serie.
+          Cada pieza se teje a mano y se ajusta a tu gusto: color de hilo, grosor y cantidad de balines.
+        </p>
+      </div>
+
+      <!-- Catálogo por categorías -->
+
+      <!-- ---------- CATEGORÍA · PLATA LEY 925 ---------- -->
+      <div class="mt-16 lg:mt-20 reveal">
+        <div class="cat-head">
+          <span class="line"></span>
+          <div class="text-center px-2">
+            <h3 class="font-display text-2xl sm:text-3xl font-light tracking-wide text-gradient-gold">Plata ley 925</h3>
+            <p class="mt-2 text-[10px] tracking-[0.25em] uppercase text-ash/80">La línea más noble de la casa: balines de plata 925, lisos y diamantados.</p>
+          </div>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-14 lg:gap-x-8">
+
+        <article class="product-card group reveal">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20San%20Benito%20de%20protecci%C3%B3n%20%28COP%2090.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-01.jpg" alt="Manilla San Benito de protección — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">01</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Plata 925 · Protección</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla San Benito de protección</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>90.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Plata ley 925. Manilla de protección. Diseño personalizado (varía el precio).
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal reveal-d1">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20balines%20seguidos%20%28COP%2060.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-02.jpg" alt="Manilla balines seguidos — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">02</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Plata 925</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla balines seguidos</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>60.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Manilla lavable. Balines de plata ley 925 diamantados. Dos hilos, color a gusto. La cantidad de balines varía el precio.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal reveal-d2">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20doble%20carril%20%28COP%2090.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-03.jpg" alt="Manilla doble carril — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">03</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Plata 925</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla doble carril</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>90.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Color de hilo a gusto. Manilla lavable. Balines de plata ley 925 diamantados. Cantidad de balines a gusto.
+              </p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <!-- ---------- CATEGORÍA · ACERO DORADO ---------- -->
+      <div class="mt-24 lg:mt-28 reveal">
+        <div class="cat-head">
+          <span class="line"></span>
+          <div class="text-center px-2">
+            <h3 class="font-display text-2xl sm:text-3xl font-light tracking-wide text-gradient-gold">Acero dorado</h3>
+            <p class="mt-2 text-[10px] tracking-[0.25em] uppercase text-ash/80">Acabados cálidos, resistentes al agua y pensados para el uso diario.</p>
+          </div>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-14 lg:gap-x-8">
+
+        <article class="product-card group reveal reveal-d3">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20cl%C3%A1sica%20%28COP%2020.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-04.jpg" alt="Manilla clásica — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">04</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Acero dorado</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla clásica</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>20.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Color a gusto. Resistente al agua. Balines de acero.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20zig%20zag%20%28COP%2030.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-05.jpg" alt="Manilla zig zag — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">05</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Acero dorado</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla zig zag</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>30.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Tamaño de hilo y balines a gusto. Balines en acero. Excelentes acabados.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal reveal-d1">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20cl%C3%A1sica%20doble%20tono%20%28COP%2025.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-06.jpg" alt="Manilla clásica doble tono — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">06</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Acero dorado</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla clásica doble tono</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>25.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Doble color de hilo a gusto. Resistente al agua. Balines en acero.
+              </p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <!-- ---------- CATEGORÍA · SELECCIÓN COLOMBIA ---------- -->
+      <div class="mt-24 lg:mt-28 reveal">
+        <div class="cat-head">
+          <span class="line"></span>
+          <div class="text-center px-2">
+            <h3 class="font-display text-2xl sm:text-3xl font-light tracking-wide text-gradient-gold">Selección Colombia</h3>
+            <p class="mt-2 text-[10px] tracking-[0.25em] uppercase text-ash/80">Los colores que nos unen, llevados con orgullo.</p>
+          </div>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-14 lg:gap-x-8">
+
+        <article class="product-card group reveal reveal-d2">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20de%20Colombia%20%28COP%2035.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-07.jpg" alt="Manilla de Colombia — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">07</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Selección Colombia</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla de Colombia</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>35.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Manilla de nuestra tierra.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal reveal-d3">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20selecci%C3%B3n%20Colombia%20%28COP%2040.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-08.jpg" alt="Manilla selección Colombia — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">08</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Selección Colombia</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla selección Colombia</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>40.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Los colores que nos unen están acá.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20bandera%20de%20Colombia%20%28COP%2035.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-09.jpg" alt="Manilla bandera de Colombia — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">09</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Selección Colombia</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla bandera de Colombia</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>35.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Manilla lavable. Balines de acero inoxidable. Los colores que nos unen.
+              </p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <!-- ---------- CATEGORÍA · OTROS DISEÑOS ---------- -->
+      <div class="mt-24 lg:mt-28 reveal">
+        <div class="cat-head">
+          <span class="line"></span>
+          <div class="text-center px-2">
+            <h3 class="font-display text-2xl sm:text-3xl font-light tracking-wide text-gradient-gold">Otros diseños</h3>
+            <p class="mt-2 text-[10px] tracking-[0.25em] uppercase text-ash/80">Piezas con intención: abundancia, carácter y detalle.</p>
+          </div>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-14 lg:gap-x-8">
+
+        <article class="product-card group reveal reveal-d1">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20abundancia%20y%20prosperidad%20%28COP%2030.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-10.jpg" alt="Manilla abundancia y prosperidad — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">10</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Plata 925</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla abundancia y prosperidad</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>30.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Manilla lavable. Balines de plata ley 925.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal reveal-d2">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20tres%20carriles%20acero%20%28COP%2035.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-11.jpg" alt="Manilla tres carriles acero — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">11</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Acero</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla tres carriles acero</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>35.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Balines en acero. Color y grosor a gusto. Resistente al agua.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal reveal-d3">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20tricolor%20%28COP%2025.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-12.jpg" alt="Manilla tricolor — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">12</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Acero brillante</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla tricolor</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>25.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Los colores de la bandera que nos une. Balines en acero brillante.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20full%20balines%204%20y%206%20mm%20%28COP%20100.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-13.jpg" alt="Manilla full balines 4 y 6 mm — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">13</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Plata 925</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla full balines 4 y 6 mm</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>100.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Balines de plata ley 925. Balines lisos y diamantados.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal reveal-d1">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20ADN%20%28COP%2060.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-14.jpg" alt="Manilla ADN — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">14</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Plata 925</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla ADN</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>60.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Balines de plata ley 925.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="product-card group reveal reveal-d2">
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20me%20interesa%20la%20Manilla%20cl%C3%A1sica%20%28COP%2050.000%29.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="block">
+            <div class="product-media">
+              <img src="img/p-15.jpg" alt="Manilla clásica — Joyería Destiny" loading="lazy" width="880" height="1100" />
+              <span class="product-index">15</span>
+              <span class="product-hover">Pedir por WhatsApp</span>
+            </div>
+
+            <div class="mt-6 text-center">
+              <p class="text-[9px] tracking-luxe uppercase text-gold/80">Plata 925</p>
+              <h4 class="mt-3 font-display text-2xl lg:text-[1.7rem] font-light tracking-wide">Manilla clásica</h4>
+              <span class="rule"></span>
+              <p class="mt-5 price"><small>COP</small>50.000</p>
+              <p class="mt-3 text-sm font-light leading-relaxed text-ash">
+                Balines de plata ley 925.
+              </p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <!-- CTA cierre catálogo -->
+      <div class="mt-24 text-center reveal">
+        <p class="font-display text-2xl sm:text-3xl font-light text-ivory/90">
+          ¿Buscas algo que aún no está aquí?
+        </p>
+        <p class="mt-3 text-sm text-ash font-light">Lo diseñamos para ti.</p>
+        <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20una%20manilla%20a%20la%20medida%20%28dise%C3%B1o%20personalizado%29."
+           target="_blank" rel="noopener"
+           class="btn-wa group relative mt-8 inline-flex items-center justify-center gap-3 px-9 py-4 overflow-hidden">
+          <svg class="w-5 h-5 shrink-0 relative z-10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ico-wa" /></svg>
+          <span class="relative z-10 text-[11px] tracking-[0.28em] uppercase font-medium">Diseñar mi pieza</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============ LA CASA ============ -->
+  <section id="casa" class="relative py-24 lg:py-32 bg-carbon border-t border-white/5 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none opacity-[0.04] flex items-center justify-center">
+      <img src="img/logo.png" alt="" class="w-[38rem] max-w-none" />
+    </div>
+
+    <div class="relative mx-auto max-w-3xl px-6 text-center">
+      <div class="flex items-center justify-center gap-4 reveal">
+        <span class="h-px w-10 bg-gradient-to-r from-transparent to-gold/60"></span>
+        <span class="text-[10px] tracking-luxe uppercase text-gold/90">La Casa</span>
+        <span class="h-px w-10 bg-gradient-to-l from-transparent to-gold/60"></span>
+      </div>
+
+      <h2 class="mt-7 font-display font-light text-3xl sm:text-4xl lg:text-5xl leading-tight reveal reveal-d1">
+        Nacimos para vestir<br class="hidden sm:block" />
+        <span class="italic text-gradient-gold">a los que llegan lejos</span>
+      </h2>
+
+      <p class="mt-8 text-ash font-light leading-relaxed text-base sm:text-lg reveal reveal-d2">
+        Joyería Destiny es una casa colombiana dedicada a las piezas que acompañan decisiones.
+        Trabajamos en series cortas, con materiales que resisten y acabados que no gritan.
+        Porque el verdadero lujo no se anuncia: se reconoce.
+      </p>
+
+      <p class="mt-10 font-display text-xl sm:text-2xl italic text-ivory/80 reveal reveal-d3">
+        “Cada pieza lleva un destino. Encuentra el tuyo.”
+      </p>
+    </div>
+  </section>
+
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-obsidian border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+
+        <div>
+          <img src="img/logo.png" alt="Joyería Destiny" class="h-20 w-auto object-contain -ml-2" />
+          <p class="mt-4 text-sm text-ash font-light max-w-xs leading-relaxed">
+            Manillas en plata ley 925 y acero dorado, con diseños personalizados. Hecho a mano en Colombia.
+          </p>
+        </div>
+
+        <div class="md:text-center">
+          <p class="text-[10px] tracking-luxe uppercase text-gold/80">Navegación</p>
+          <ul class="footer-nav mt-4 space-y-1 text-sm font-light">
+            <li><a href="#inicio" class="text-ash hover:text-gold transition-colors duration-300">Inicio</a></li>
+            <li><a href="#catalogo" class="text-ash hover:text-gold transition-colors duration-300">Colección</a></li>
+            <li><a href="#casa" class="text-ash hover:text-gold transition-colors duration-300">La Casa</a></li>
+          </ul>
+        </div>
+
+        <div class="md:text-right">
+          <p class="text-[10px] tracking-luxe uppercase text-gold/80">Atención personalizada</p>
+          <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20informaci%C3%B3n."
+             target="_blank" rel="noopener"
+             class="footer-tel mt-4 inline-flex items-center gap-3 text-ivory hover:text-gold transition-colors duration-300">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ico-wa" /></svg>
+            <span class="text-sm font-light tracking-wide">+57 304 217 7260</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mt-14 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-[10px] tracking-[0.25em] uppercase text-ash/80">© <span id="year">2026</span> Joyería Destiny</p>
+        <p class="text-[10px] tracking-[0.25em] uppercase text-ash/80">Hecho en Colombia</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============ BOTÓN FLOTANTE WHATSAPP ============ -->
+  <a href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20piezas."
+     target="_blank" rel="noopener" id="waFloat"
+     class="fixed z-50 bottom-6 right-6 flex items-center gap-3 group"
+     aria-label="Escribir por WhatsApp">
+    <span class="hidden sm:block wa-tip">Asesoría directa</span>
+    <span class="wa-orb">
+      <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ico-wa" /></svg>
+    </span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Dependencias (no hacen falta en el repositorio: el sitio sube ya compilado)
+node_modules/
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.bak
