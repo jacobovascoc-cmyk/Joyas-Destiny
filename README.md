@@ -1,111 +1,148 @@
-# Joyería Destiny — v2 (mobile-first)
+<div align="center">
 
-Rediseño completo de la tienda, pensado primero para celular. Es una versión **independiente**:
-no toca nada de `Joyería-Destiny-Oficial/` (la web publicada) ni de `joyeria-destiny/`.
+# Joyería Destiny
 
-## Cómo abrirla
+### *El brillo que refleja tu personalidad*
 
-Doble clic en `index.html`. No necesita instalar nada ni servidor: la navegación funciona
-con rutas `#/…`, que se pueden abrir directo desde el disco, subir a GitHub Pages o compartir
-por WhatsApp.
+**[joyeriadestiny.com](https://joyeriadestiny.com)**
 
-**Para verla como en un celular desde el computador:** doble clic en
-`../ver-en-celular.html` (está en la carpeta *Joyas destiny*, al lado de esta). Muestra la
-página dentro de un teléfono a tamaño real (390 px de ancho) y tiene botones para cambiar a
-tablet o computador. Esa herramienta no forma parte de la página: no la subas a la web.
+Manillas y anillos en **oro 18 kilates**, **plata ley 925**, **acero** y **rodio**,
+tejidos a mano en Colombia.
 
-```
-destiny_v2/
-├── CNAME               dominio joyeriadestiny.com (no borrar)
-├── .nojekyll           indica a GitHub que publique los archivos tal cual
-├── index.html          estructura común: cabecera, pie, WhatsApp flotante
-├── css/destiny.css     todo el diseño (mobile-first; tablet ≥640 px; computador ≥1024 px)
-├── js/catalogo.js      ← AQUÍ SE EDITA EL CONTENIDO: categorías, productos, precios, WhatsApp
-├── js/app.js           navegación, vistas y comportamiento
-└── assets/img/         logo, foto de "La casa" y fotos del catálogo (copiadas de la web actual)
-```
+</div>
 
-## Rutas
+---
 
-| Dirección | Qué muestra |
+## Una boutique en la palma de la mano
+
+La nueva página de Joyería Destiny no se siente como una tienda en línea más. Se siente
+como **entrar a una joyería**: luz baja, piezas en primer plano y un asesor a un mensaje de
+distancia.
+
+Está diseñada **primero para el celular**, porque ahí es donde nuestros clientes descubren,
+comparan y compran. En el computador se despliega con la misma elegancia, con más espacio
+para que cada pieza respire.
+
+---
+
+## La experiencia
+
+### 1. Cuatro puertas, una decisión
+Al abrir la página, el cliente no ve un menú: ve **cuatro fotografías que llenan la
+pantalla**, una por material. **Oro 18 kilates**, **Plata Ley 925**, **Acero** y **Rodio**.
+Con cada deslizamiento aparece una nueva, encajada en su lugar. En segundos el cliente sabe
+qué vendemos y cuál es su estilo.
+
+### 2. Cada colección tiene su propia sala
+Tocar una puerta lleva a una **página exclusiva para ese material**, con su portada, su
+historia y todas sus piezas.
+
+- **Oro 18 kilates** muestra de inmediato la colección completa.
+- **Plata Ley 925** primero pregunta *"¿Qué estás buscando?"* y ofrece dos caminos con
+  imagen: **Manillas** o **Anillos**. Como un asesor que guía antes de mostrar.
+- **Acero** y **Rodio** abren directo su vitrina.
+
+### 3. La pieza, de cerca
+Cada joya tiene su propia ficha:
+
+- **Fotografía que se acerca con un toque**, para ver el tejido y cada balín como si
+  estuviera en la mano.
+- **Precio claro** en pesos colombianos.
+- **El detalle real de la pieza**: material, número y tipo de balines.
+- **Pedir por WhatsApp** con un solo toque. El mensaje ya va escrito con el nombre,
+  el material y el precio de la pieza.
+- **Personalizar esta pieza**: hilo, balinería y dije a gusto del cliente.
+- **Otras piezas de la misma colección**, para seguir explorando sin volver atrás.
+
+Al bajar por la ficha, una **barra de compra fija** acompaña al cliente para que pedir esté
+siempre a un toque.
+
+### 4. Volver nunca es empezar de nuevo
+El botón **"Atrás"** regresa al cliente **exactamente al punto donde estaba**. Si llega por un
+enlace compartido por WhatsApp, "Atrás" lo guía dentro de la tienda en lugar de sacarlo
+de ella.
+
+### 5. Lo que aún no existe, lo creamos
+Justo después de las colecciones, y al final de cada catálogo:
+
+> **¿Buscas algo que aún no está aquí?**
+> *Lo diseñamos para ti.*
+
+Un toque y el cliente está conversando con nosotros sobre su pieza a la medida.
+
+---
+
+## La marca, contada con calma
+
+Más abajo, la página cuenta quiénes somos:
+
+- **Identidad de marca**: autenticidad, oficio, significado y personalidad.
+- **Guía de materiales**: qué significa realmente *18 kilates*, *ley 925*, *acero* y *rodio*,
+  explicado con claridad.
+- **Casa Destiny**: *"No seguimos un camino, construimos el nuestro."*
+
+> *"Cada pieza lleva un destino. Encuentra el tuyo."*
+
+---
+
+## Detalles que no se ven, pero se sienten
+
+| | |
 |---|---|
-| `#/` | Inicio: las 4 puertas, "¿Buscas algo que aún no está aquí?", Identidad de marca y Casa Destiny |
-| `#/oro` | Catálogo completo de oro 18 kilates, directo |
-| `#/plata` | Elección de línea: **Manillas** o **Anillos** (botones con foto) |
-| `#/plata/manillas` · `#/plata/anillos` | Catálogo de esa línea |
-| `#/acero` · `#/rodio` | Catálogo completo, directo |
-| `#/pieza/24-san-benito-tres-carriles` | Ficha de una pieza |
+| **Hecha para el celular** | Se probó en pantallas desde 320 px hasta computadores de 1440 px, sin nada que se salga ni se corte. |
+| **Rápida** | Sin programas pesados de por medio: abre al instante, incluso con datos móviles. |
+| **Fácil de tocar** | Botones y enlaces con el tamaño adecuado para el dedo. |
+| **WhatsApp en todas partes** | Cabecera, botón flotante, cada pieza y cada catálogo. El mensaje cambia según lo que el cliente está viendo. |
+| **Bien presentada al compartirla** | Al enviar el enlace por WhatsApp o redes, aparece con foto, título y descripción. |
+| **Siempre completa** | Si alguna foto faltara, su espacio muestra el sello de la casa en lugar de un hueco. |
+| **Accesible** | Textos alternativos en cada foto, navegación con teclado y respeto por quienes prefieren menos animaciones. |
 
-**Botón "Atrás"** (arriba a la izquierda en todas las páginas internas): vuelve a la página
-anterior en el mismo punto donde el cliente la dejó. Si alguien entra por un enlace directo
-(por ejemplo, uno compartido por WhatsApp), "Atrás" sube por la tienda:
-pieza → catálogo → colección → inicio, sin sacarlo del sitio.
+---
 
-## Editar el catálogo (`js/catalogo.js`)
+## Para el equipo
 
-**Agregar una pieza:** copia un bloque `{ … }` de `PRODUCTOS` y cambia sus datos.
+### Cambiar productos, precios o fotos
+Todo el catálogo vive en un solo archivo: **`js/catalogo.js`**. Ahí se agregan piezas, se
+cambian precios y se eligen las fotos de portada. No hace falta tocar nada más.
 
 ```js
 {
-  id: 32,                       // número que no se repita
-  categoria: 'plata',           // 'oro' | 'plata' | 'acero' | 'rodio'
-  tipo: 'anillo',               // 'manilla' | 'anillo' | 'combo'
-  nombre: 'Anillo nuevo',
-  precio: 59900,                // o null para mostrar "Precio a consultar"
-  imagen: 'assets/img/catalogo/anillo-nuevo.jpg',
+  id: 32,                        // número que no se repita
+  categoria: 'plata',            // 'oro' | 'plata' | 'acero' | 'rodio'
+  tipo: 'anillo',                // 'manilla' | 'anillo' | 'combo'
+  nombre: 'Nombre de la pieza',
+  precio: 59900,                 // o null para "Precio a consultar"
+  imagen: 'assets/img/catalogo/nombre-de-la-foto.jpg',
   alt: 'Descripción de la foto',
   detalle: 'Balinería en plata 925. 10 balines #3 diamantados.'
 }
 ```
 
-- En Plata, el `tipo` decide la línea: `anillo` va a **Anillos**; `manilla` y `combo` van a **Manillas**.
-- Cada frase de `detalle` separada por punto se muestra como una línea en la ficha.
-- Los combos aparecen al final de su catálogo con el sello "Combo · 2 piezas".
-- El orden en el archivo es el orden en la tienda.
+Fotos de producto: **verticales 3:4** (por ejemplo 1200 × 1600 px), JPG de menos de 300 KB,
+con nombres en minúscula y sin espacios ni tildes.
 
-**Cambiar una portada:** en `CATEGORIAS`, el campo `portada` de cada colección (y de cada
-línea de Plata) apunta a la foto que se ve en las puertas y en la cabecera del catálogo.
+### Estructura
 
-**Si una foto falta**, la tienda no muestra un hueco: el marco muestra el logo con
-"Foto en camino".
+```
+CNAME               dominio joyeriadestiny.com (no borrar)
+.nojekyll           publicación directa en GitHub Pages
+index.html          estructura de la página
+css/destiny.css     diseño completo
+js/catalogo.js      productos, precios, categorías y WhatsApp
+js/app.js           navegación entre colecciones y piezas
+assets/img/         logo, fotos de portada y catálogo
+```
 
-## Fotos
+### Publicar cambios
+En GitHub: **Add file → Upload files**. Cada carpeta se arrastra **sola**, y los archivos
+sueltos van en una tanda aparte. Nunca se mezclan carpetas y archivos en la misma subida.
 
-Todas las fotos actuales son verticales 3:4, que es el formato que usa la tienda.
+---
 
-- **Producto:** vertical 3:4 (por ejemplo 1200 × 1600 px), JPG de menos de 300 KB.
-- **Portadas de las puertas:** el texto va arriba y el botón abajo, así que la pieza debe
-  quedar en la franja central de la foto.
-- **La casa Destiny** (`assets/img/hero.jpg`): horizontal, con la pieza hacia la derecha.
+<div align="center">
 
-## Subir a GitHub (reemplaza la web de joyeriadestiny.com)
+**Joyería Destiny** · Hecho en Colombia
 
-La carpeta ya trae todo lo necesario: `CNAME` (mantiene el dominio joyeriadestiny.com)
-y `.nojekyll`. Se sube **el contenido** de `destiny_v2`, no la carpeta `destiny_v2` como tal.
+*El brillo que refleja tu personalidad*
 
-Regla de oro: **cada carpeta se arrastra sola**. Arrastrar una mezcla de archivos y carpetas a
-la vez hace que GitHub deje carpetas por fuera y la web sale sin fotos.
-
-En github.com → tu repositorio → **Add file → Upload files**, cuatro tandas, cada una con
-**Commit changes**:
-
-1. Carpeta `css` (sola).
-2. Carpeta `js` (sola).
-3. Carpeta `assets` (sola).
-4. Los archivos sueltos: `index.html`, `CNAME`, `.nojekyll`, `README.md`.
-   `index.html` va de último para que la web nunca apunte a archivos que aún no subieron.
-
-Espera 1–2 minutos y abre joyeriadestiny.com (en computador, Ctrl + F5 para ver la versión nueva).
-
-En GitHub deben quedar `css/`, `js/` y `assets/` en la raíz, al lado de `index.html`.
-Si ves una carpeta llamada `destiny_v2`, se subió la carpeta entera: está mal.
-
-Los archivos de la versión anterior que queden en el repositorio (`styles.css`,
-`script.js`, `tailwind.css`, `data/`…) ya no se usan y no estorban; puedes borrarlos
-cuando quieras. La copia de la versión anterior sigue en `Joyería-Destiny-Oficial/`.
-
-## Textos para revisar
-
-- "¿Buscas algo que aún no está aquí?" y Casa Destiny usan los textos de la web oficial.
-- Identidad de marca, la Guía de materiales (en `js/app.js`) y las descripciones de cada
-  colección (en `js/catalogo.js`) son textos nuevos.
+</div>
