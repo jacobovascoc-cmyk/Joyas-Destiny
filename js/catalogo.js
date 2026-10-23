@@ -99,6 +99,23 @@ const PRODUCTOS = [
     alt: 'Manilla tejida en hilo rojo y beige con balines de oro 18 kilates diamantados y cuentas rojas',
     detalle: 'Balinería en oro 18 kilates. 3 balines #4 diamantados. 2 balines #3 diamantados.'
   },
+  {
+    id: 32, categoria: 'oro', tipo: 'manilla',
+    nombre: 'Zafiro dorado',
+    precio: 347000,
+    imagen: 'assets/img/catalogo/zafiro-dorado.jpg',
+    alt: 'Manilla tejida en hilo verde con morralla de esmeralda natural al centro y balines de oro 18 kilates',
+    detalle: 'Balinería en oro 18 kilates. 6 balines #4 oro 18k. Morralla de esmeralda natural.'
+  },
+  {
+    id: 33, categoria: 'oro', tipo: 'manilla',
+    nombre: 'Oro plata',
+    material: 'Oro 18k y plata 925',
+    precio: 257900,
+    imagen: 'assets/img/catalogo/oro-plata.jpg',
+    alt: 'Manilla de hilo negro con balines diamantados de plata 925 intercalados con balines de oro 18 kilates',
+    detalle: 'Balinería en oro 18k y plata 925. 3 balines #4 oro 18k. 2 balines #3 oro 18k. 12 balines #4 plata 925.'
+  },
 
   /* ---------------- PLATA LEY 925 · MANILLAS ---------------- */
   {
@@ -204,6 +221,38 @@ const PRODUCTOS = [
     imagen: 'assets/img/catalogo/full-roja.jpg',
     alt: 'Manilla de cuentas de cornalina roja alternadas con balines de plata 925 italianos',
     detalle: 'Plata 925 y cornalina. 6 balines #4 italianos.'
+  },
+  {
+    id: 34, categoria: 'plata', tipo: 'manilla',
+    nombre: 'San Benito de protección',
+    precio: 126000,
+    imagen: 'assets/img/catalogo/san-benito-de-proteccion.jpg',
+    alt: 'Manilla tejida en hilo negro con dije de San Benito al centro y balines diamantados de plata 925',
+    detalle: 'Dije de San Benito de 1,5 g. 6 balines #5 diamantados. 2 balines #4 lisos.'
+  },
+  {
+    id: 35, categoria: 'plata', tipo: 'manilla',
+    nombre: 'Plata y esmeralda',
+    precio: null,   // PENDIENTE: el precio no aparece en la descripción recibida
+    imagen: 'assets/img/catalogo/plata-y-esmeralda.jpg',
+    alt: 'Manilla tejida en hilo verde con morralla de esmeralda natural al centro rodeada de balines diamantados de plata 925',
+    detalle: 'Morralla de esmeralda natural. 8 balines #5 diamantados. 4 balines #4 diamantados. 2 balines #4 lisos.'
+  },
+  {
+    id: 36, categoria: 'plata', tipo: 'manilla',
+    nombre: 'Green Desing',
+    precio: 45000,   // mismo precio que Blue Desing y Full roja
+    imagen: 'assets/img/catalogo/green-desing.jpg',
+    alt: 'Manilla de cuentas verdes facetadas alternadas con balines de plata 925 y cierre de hilo verde',
+    detalle: 'Cuentas verdes y plata 925. 6 balines #4 italianos.'
+  },
+  {
+    id: 37, categoria: 'plata', tipo: 'manilla',
+    nombre: 'Abundancia y prosperidad',
+    precio: 32000,
+    imagen: 'assets/img/catalogo/abundancia-y-prosperidad.jpg',
+    alt: 'Manilla de cuentas verdes y amarillas alternadas con balines diamantados y cierre de hilo negro',
+    detalle: 'Cuentas verdes y amarillas. 5 balines #4 diamantados.'
   },
   {
     id: 20, categoria: 'plata', tipo: 'combo',

@@ -105,7 +105,10 @@
     return 'Manilla';
   }
 
+  // Material que se muestra en la tarjeta y la ficha. Por defecto el de su colección;
+  // una pieza que combina metales (p. ej. oro y plata) puede indicarlo con "material".
   function materialDe(p) {
+    if (p.material) return p.material;
     var cat = categoria(p.categoria);
     return cat ? cat.material : '';
   }
