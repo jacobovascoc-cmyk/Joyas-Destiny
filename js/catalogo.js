@@ -12,6 +12,8 @@
      categoria   'oro' | 'plata' | 'acero' | 'rodio'
      tipo        'manilla' | 'anillo' | 'combo'
      precio      número en pesos colombianos, o null = "a consultar"
+     agotado     (opcional) true = se muestra "Agotado". Para que vuelva a estar
+                 disponible, borra "agotado: true," de esa pieza.
      imagen      ruta de la foto (vertical 3:4 recomendada)
      alt         descripción de la foto (accesibilidad y Google)
      detalle     especificación; cada frase separada por punto se
@@ -167,7 +169,7 @@ const PRODUCTOS = [
     detalle: 'Dije y balinería en plata 925. 4 balines #5 diamantados. 2 balines #4 italianos. 2 balines #4 lisos.'
   },
   {
-    id: 17, categoria: 'plata', tipo: 'manilla',
+    id: 17, categoria: 'plata', tipo: 'manilla', agotado: true,
     nombre: 'Clásica beige',
     precio: 77600,
     imagen: 'assets/img/catalogo/clasica-beige-plata-925.jpg',
@@ -175,7 +177,7 @@ const PRODUCTOS = [
     detalle: 'Balinería en plata ley 925. 16 balines #4 italianos. 2 balines #4 lisos.'
   },
   {
-    id: 18, categoria: 'plata', tipo: 'manilla',
+    id: 18, categoria: 'plata', tipo: 'manilla', agotado: true,
     nombre: 'Clásica negra',
     precio: 77600,
     imagen: 'assets/img/catalogo/clasica-negra-plata-925.jpg',
@@ -183,7 +185,7 @@ const PRODUCTOS = [
     detalle: 'Balinería en plata ley 925. 16 balines #4 italianos. 2 balines #4 lisos.'
   },
   {
-    id: 19, categoria: 'plata', tipo: 'manilla',
+    id: 19, categoria: 'plata', tipo: 'manilla', agotado: true,
     nombre: 'Clásica roja',
     precio: 77600,
     imagen: 'assets/img/catalogo/clasica-roja-plata-925.jpg',
@@ -207,7 +209,7 @@ const PRODUCTOS = [
     detalle: 'Balinería en plata 925. 2 balines #6 diamantados.'
   },
   {
-    id: 11, categoria: 'plata', tipo: 'manilla',
+    id: 11, categoria: 'plata', tipo: 'manilla', agotado: true,
     nombre: 'Blue Desing',
     precio: 45000,
     imagen: 'assets/img/catalogo/blue-desing.jpg',
@@ -215,7 +217,7 @@ const PRODUCTOS = [
     detalle: 'Cuarzo azul y plata 925. 6 balines #4 italianos.'
   },
   {
-    id: 26, categoria: 'plata', tipo: 'manilla',
+    id: 26, categoria: 'plata', tipo: 'manilla', agotado: true,
     nombre: 'Full roja',
     precio: 45000,
     imagen: 'assets/img/catalogo/full-roja.jpg',
@@ -281,7 +283,7 @@ const PRODUCTOS = [
     detalle: 'Balinería y dije en plata 925. 12 balines #3 diamantados.'
   },
   {
-    id: 4, categoria: 'plata', tipo: 'anillo',
+    id: 4, categoria: 'plata', tipo: 'anillo', agotado: true,
     nombre: 'Anillo tejido',
     precio: 43900,
     imagen: 'assets/img/catalogo/anillo-tejido.jpg',

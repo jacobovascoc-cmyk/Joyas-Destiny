@@ -85,7 +85,10 @@
     return null;
   }
 
-  // Piezas de una colección (y opcionalmente de una línea). Los combos van al final.
+  // Piezas de una colección (y opcionalmente de una línea).
+  // Orden: piezas disponibles, luego combos y al final las agotadas.
+  function puesto(p) { return p.agotado ? 2 : (p.tipo === 'combo' ? 1 : 0); }
+
   function piezasDe(cat, lin) {
     return PRODUCTOS
       .map(function (p, i) { return { p: p, i: i }; })
@@ -93,8 +96,7 @@
         return x.p.categoria === cat.id && (!lin || lin.tipos.indexOf(x.p.tipo) > -1);
       })
       .sort(function (a, b) {
-        var ca = a.p.tipo === 'combo' ? 1 : 0, cb = b.p.tipo === 'combo' ? 1 : 0;
-        return ca - cb || a.i - b.i;
+        return puesto(a.p) - puesto(b.p) || a.i - b.i;
       })
       .map(function (x) { return x.p; });
   }
@@ -221,10 +223,11 @@
 
   function tarjeta(p, i) {
     return '' +
-      '<a class="tarjeta revela" style="--d:' + (i % 4) + '" href="' + urlPieza(p) + '">' +
+      '<a class="tarjeta revela' + (p.agotado ? ' agotada' : '') + '" style="--d:' + (i % 4) + '" href="' + urlPieza(p) + '">' +
         '<div class="tarjeta-media">' +
           marcoFoto(p.imagen, p.alt, 'tarjeta-foto') +
-          (p.tipo === 'combo' ? '<span class="sello">Combo · 2 piezas</span>' : '') +
+          (p.agotado ? '<span class="sello sello-agotado">Agotado</span>'
+                     : (p.tipo === 'combo' ? '<span class="sello">Combo · 2 piezas</span>' : '')) +
         '</div>' +
         '<div class="tarjeta-info">' +
           '<h3 class="tarjeta-nombre">' + esc(p.nombre) + '</h3>' +
@@ -477,16 +480,21 @@
     hermanas = hermanas.slice(0, 8);
 
     var etiqueta = materialDe(p) + ' · ' + etiquetaTipo(p);
-    var pedir = wa('Hola Joyería Destiny, quiero pedir "' + p.nombre + '" (' + etiqueta + ', ' +
-                   precioTexto(p) + '). ¿Está disponible?');
+    var pedir = p.agotado
+      ? wa('Hola Joyería Destiny, vi que "' + p.nombre + '" (' + etiqueta + ') está agotada. ' +
+           '¿Me avisan cuando vuelva a estar disponible?')
+      : wa('Hola Joyería Destiny, quiero pedir "' + p.nombre + '" (' + etiqueta + ', ' +
+           precioTexto(p) + '). ¿Está disponible?');
+    var textoPedir = p.agotado ? 'Avisarme cuando vuelva' : 'Pedir por WhatsApp';
     var personalizar = wa('Hola Joyería Destiny, me gusta "' + p.nombre + '" (' + etiqueta +
                           ') y quiero personalizarla. ¿Qué opciones tengo?');
 
     return '' +
       '<article class="pieza">' +
         '<div class="pieza-galeria">' +
-          '<button type="button" class="pieza-lupa" aria-label="Acercar la foto" data-lupa>' +
+          '<button type="button" class="pieza-lupa' + (p.agotado ? ' agotada' : '') + '" aria-label="Acercar la foto" data-lupa>' +
             marcoFoto(p.imagen, p.alt, 'pieza-foto', 'eager') +
+            (p.agotado ? '<span class="sello sello-agotado">Agotado</span>' : '') +
             '<span class="pieza-pista">' + icono('i-lupa') + '<span>Toca para acercar</span></span>' +
           '</button>' +
         '</div>' +
@@ -499,10 +507,12 @@
           '<h1 class="pieza-nombre" tabindex="-1">' + esc(p.nombre) + '</h1>' +
           '<p class="pieza-tipo">' + esc(etiqueta) + '</p>' +
           precioHTML(p, 'pieza-precio') +
+          (p.agotado ? '<p class="pieza-agotada">Agotado por ahora. Escríbenos y te avisamos ' +
+                       'apenas vuelva, o la tejemos a tu medida.</p>' : '') +
 
           '<div class="pieza-acciones" id="piezaAcciones">' +
             '<a class="btn-oro" href="' + pedir + '" target="_blank" rel="noopener">' +
-              icono('i-wa') + 'Pedir por WhatsApp</a>' +
+              icono('i-wa') + textoPedir + '</a>' +
             '<a class="btn-linea" href="' + personalizar + '" target="_blank" rel="noopener">' +
               'Personalizar esta pieza</a>' +
           '</div>' +
@@ -532,7 +542,8 @@
                 '<a class="mini" href="' + urlPieza(x) + '">' +
                   marcoFoto(x.imagen, x.alt, 'mini-foto') +
                   '<span class="mini-nombre">' + esc(x.nombre) + '</span>' +
-                  (hayPrecio(x.precio) ? '<span class="mini-precio">' + pesos(x.precio) + '</span>' : '') +
+                  (x.agotado ? '<span class="mini-precio mini-agotado">Agotado</span>'
+                             : (hayPrecio(x.precio) ? '<span class="mini-precio">' + pesos(x.precio) + '</span>' : '')) +
                 '</a>';
             }).join('') +
           '</div>' +
@@ -541,10 +552,11 @@
       '<div class="barra-compra" id="barraCompra" aria-hidden="true">' +
         '<div class="barra-compra-texto">' +
           '<span class="barra-compra-nombre">' + esc(p.nombre) + '</span>' +
-          (hayPrecio(p.precio) ? '<span class="barra-compra-precio">' + pesos(p.precio) + ' COP</span>' : '') +
+          (p.agotado ? '<span class="barra-compra-precio">Agotado</span>'
+                     : (hayPrecio(p.precio) ? '<span class="barra-compra-precio">' + pesos(p.precio) + ' COP</span>' : '')) +
         '</div>' +
         '<a class="btn-oro btn-oro-compacto" href="' + pedir + '" target="_blank" rel="noopener" tabindex="-1">' +
-          icono('i-wa') + 'Pedir</a>' +
+          icono('i-wa') + (p.agotado ? 'Avisarme' : 'Pedir') + '</a>' +
       '</div>';
   }
 
