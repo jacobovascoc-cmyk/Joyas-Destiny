@@ -777,6 +777,29 @@ html:not([data-vista="inicio"]) .eslogan { display: none; }
   color: var(--oro-claro);
 }
 
+/* Piezas agotadas: siguen visibles, pero se distinguen con claridad */
+.sello-agotado {
+  z-index: 2;
+  border-color: rgba(244, 241, 234, .35);
+  background: rgba(7, 11, 22, .86);
+  color: var(--marfil);
+  letter-spacing: .2em;
+}
+.pieza-lupa .sello-agotado { top: 14px; left: 14px; }
+.tarjeta.agotada .tarjeta-foto img,
+.pieza-lupa.agotada .pieza-foto img { filter: grayscale(.55) brightness(.72); }
+.tarjeta.agotada .tarjeta-precio { color: var(--ceniza); }
+.pieza-agotada {
+  margin: .9rem 0 0;
+  padding: .85rem 1rem;
+  border-left: 2px solid var(--oro);
+  background: rgba(201, 162, 39, .07);
+  font-size: .95rem;
+  line-height: 1.6;
+  color: rgba(244, 241, 234, .9);
+}
+.mini-agotado { color: var(--ceniza); letter-spacing: .14em; text-transform: uppercase; font-size: 11px; }
+
 .tarjeta-info { padding-top: .9rem; }
 .tarjeta-nombre {
   margin: 0;
