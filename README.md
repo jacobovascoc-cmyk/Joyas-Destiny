@@ -11,6 +11,18 @@ tejidos a mano en Colombia.
 
 </div>
 
+> **Versión 3 (destiny_v3).** Nuevo inicio mobile-first: hero solo con la marca, manillas en
+> estanterías horizontales por material (Oro 18k, Plata 925, Acero, Rodio), anillos en bloque propio,
+> Casa Destiny y pie de página en carpetas plegables. Menú ☰ con todas las secciones. Identidad de
+> marca y Guía de materiales tienen ahora su propia página (`#/marca/identidad`, `#/marca/materiales`).
+> Cada estantería muestra **todas** las piezas de su material y termina en "Tu pieza personalizada"
+> (WhatsApp). Al tocar una pieza se abre la **vista rápida**: foto grande, precio, detalle y
+> botones de compra; se cierra con la X, tocando fuera, con Escape o con Atrás, y el cliente
+> vuelve al mismo punto. Portada: `assets/img/portada-movil.jpg` (celular) y
+> `assets/img/portada-pc.jpg` (computador); foto de Casa Destiny: `assets/img/casa.jpg`.
+> Productos, precios, fichas, catálogos y piezas agotadas funcionan igual que en destiny_v2:
+> todo se sigue editando en `js/catalogo.js`.
+
 ---
 
 ## Una boutique en la palma de la mano

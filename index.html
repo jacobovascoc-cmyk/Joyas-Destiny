@@ -16,7 +16,7 @@
   <meta property="og:url" content="https://joyeriadestiny.com/" />
   <meta property="og:title" content="Joyería Destiny — El brillo que refleja tu personalidad" />
   <meta property="og:description" content="Manillas y anillos en oro 18k, plata ley 925, acero y rodio, tejidos a mano. Entrega a todo Colombia." />
-  <meta property="og:image" content="https://joyeriadestiny.com/assets/img/hero.jpg" />
+  <meta property="og:image" content="https://joyeriadestiny.com/assets/img/portada-pc.jpg" />
   <meta property="og:image:alt" content="Manilla de plata 925 de Joyería Destiny" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -27,6 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
 
+  <link rel="preload" as="image" href="assets/img/portada-movil.jpg" media="(max-width: 767px)" />
   <link rel="stylesheet" href="css/destiny.css" />
   <script>if (window.self !== window.top) document.documentElement.classList.add("en-marco");</script>
 </head>
@@ -52,11 +53,12 @@
 
   <a href="#app" class="saltar">Ir al contenido</a>
 
-  <!-- Cabecera -->
+  <!-- Barra de anuncio (solo arriba del inicio; rota tres mensajes) -->
+  <div class="aviso" aria-hidden="true"><span class="aviso-texto">Envíos a todo Colombia</span></div>
+
+  <!-- Cabecera: Atrás (páginas internas) · logo · colecciones (computador), WhatsApp y menú -->
   <header class="cabecera">
     <div class="cabecera-izq">
-      <!-- En el inicio se muestra el eslogan; en las páginas internas, el botón Atrás -->
-      <p class="eslogan">El brillo que refleja<br /><em>tu personalidad</em></p>
       <button type="button" class="btn-atras" data-atras>
         <svg class="ico" aria-hidden="true"><use href="#i-atras" /></svg>
         <span>Atrás</span>
@@ -68,7 +70,6 @@
     </a>
 
     <div class="cabecera-der">
-      <!-- Accesos directos a las colecciones (solo en computador) -->
       <nav class="cabecera-nav" aria-label="Colecciones">
         <a href="#/oro" data-cat="oro">Oro 18k</a>
         <a href="#/plata" data-cat="plata">Plata 925</a>
@@ -79,8 +80,36 @@
          href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20asesor%C3%ADa%20para%20elegir%20una%20pieza.">
         <svg class="ico" aria-hidden="true"><use href="#i-wa" /></svg>
       </a>
+      <button type="button" class="btn-menu" data-menu aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span class="btn-menu-icono" aria-hidden="true"><span></span><span></span></span>
+      </button>
     </div>
   </header>
+
+  <!-- Menú ☰ -->
+  <div id="menu" class="menu-panel" aria-hidden="true">
+    <nav class="menu-contenido" aria-label="Menú">
+      <a class="menu-enlace" href="#/">Inicio</a>
+      <a class="menu-enlace" href="#/" data-seccion="manillas">Manillas</a>
+      <div class="menu-sub">
+        <a href="#/oro">Oro 18 kilates</a>
+        <a href="#/plata/manillas">Plata Ley 925</a>
+        <a href="#/acero">Acero</a>
+        <a href="#/rodio">Rodio</a>
+      </div>
+      <a class="menu-enlace" href="#/plata/anillos">Anillos</a>
+      <a class="menu-enlace" href="#/" data-seccion="casa">Casa Destiny</a>
+      <div class="menu-sub">
+        <a href="#/marca/identidad">Identidad de marca</a>
+        <a href="#/marca/materiales">Guía de materiales</a>
+      </div>
+      <a class="btn-oro menu-cta" target="_blank" rel="noopener"
+         href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20asesor%C3%ADa%20para%20elegir%20una%20pieza.">
+        <svg class="ico" aria-hidden="true"><use href="#i-wa" /></svg>
+        Escríbenos por WhatsApp
+      </a>
+    </nav>
+  </div>
 
   <!-- Aquí se pinta cada vista (inicio, colección, catálogo, pieza) -->
   <main id="app" tabindex="-1">
@@ -90,37 +119,76 @@
     </noscript>
   </main>
 
-  <!-- Pie de página (común a todas las vistas) -->
+  <!-- Pie de página: carpetas plegables (en computador se ven abiertas, en columnas) -->
   <footer class="pie">
     <div class="contenedor">
-      <img src="assets/img/logo.png" alt="Joyería Destiny" class="pie-logo" />
-      <p class="pie-eslogan">El brillo que refleja <em>tu personalidad</em></p>
+      <div class="carpetas">
 
-      <div class="pie-columnas">
-        <nav aria-label="Colecciones">
-          <p class="pie-titulo">Colecciones</p>
-          <ul>
-            <li><a href="#/oro">Oro 18 kilates</a></li>
-            <li><a href="#/plata">Plata Ley 925</a></li>
-            <li><a href="#/acero">Acero</a></li>
-            <li><a href="#/rodio">Rodio</a></li>
-          </ul>
-        </nav>
-        <nav aria-label="La marca">
-          <p class="pie-titulo">La marca</p>
-          <ul>
-            <li><a href="#/" data-seccion="identidad">Identidad</a></li>
-            <li><a href="#/" data-seccion="casa">Casa Destiny</a></li>
-          </ul>
-        </nav>
-        <div>
-          <p class="pie-titulo">Atención personalizada</p>
-          <a class="pie-wa" target="_blank" rel="noopener"
-             href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20informaci%C3%B3n.">
-            <svg class="ico" aria-hidden="true"><use href="#i-wa" /></svg>
-            +57 304 217 7260
-          </a>
+        <div class="carpeta">
+          <button type="button" class="carpeta-btn" data-carpeta aria-expanded="false" aria-controls="carpeta-colecciones">
+            <span>Colecciones</span><span class="carpeta-signo" aria-hidden="true"></span>
+          </button>
+          <div class="carpeta-panel" id="carpeta-colecciones">
+            <ul>
+              <li><a href="#/oro">Oro 18 kilates</a></li>
+              <li><a href="#/plata/manillas">Plata Ley 925 · Manillas</a></li>
+              <li><a href="#/plata/anillos">Plata Ley 925 · Anillos</a></li>
+              <li><a href="#/acero">Acero</a></li>
+              <li><a href="#/rodio">Rodio</a></li>
+            </ul>
+          </div>
         </div>
+
+        <div class="carpeta">
+          <button type="button" class="carpeta-btn" data-carpeta aria-expanded="false" aria-controls="carpeta-marca">
+            <span>La marca</span><span class="carpeta-signo" aria-hidden="true"></span>
+          </button>
+          <div class="carpeta-panel" id="carpeta-marca">
+            <ul>
+              <li><a href="#/" data-seccion="casa">Casa Destiny</a></li>
+              <li><a href="#/marca/identidad">Identidad de marca</a></li>
+              <li><a href="#/marca/materiales">Guía de materiales</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="carpeta">
+          <button type="button" class="carpeta-btn" data-carpeta aria-expanded="false" aria-controls="carpeta-atencion">
+            <span>Atención personalizada</span><span class="carpeta-signo" aria-hidden="true"></span>
+          </button>
+          <div class="carpeta-panel" id="carpeta-atencion">
+            <ul>
+              <li>
+                <a class="pie-wa" target="_blank" rel="noopener"
+                   href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20informaci%C3%B3n.">
+                  <svg class="ico" aria-hidden="true"><use href="#i-wa" /></svg>
+                  +57 304 217 7260
+                </a>
+              </li>
+              <li><a target="_blank" rel="noopener"
+                     href="https://wa.me/573042177260?text=Hola%20Joyer%C3%ADa%20Destiny%2C%20quiero%20una%20manilla%20a%20la%20medida%20(dise%C3%B1o%20personalizado).">Diseña tu pieza a la medida</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="carpeta">
+          <button type="button" class="carpeta-btn" data-carpeta aria-expanded="false" aria-controls="carpeta-compra">
+            <span>Compra y envíos</span><span class="carpeta-signo" aria-hidden="true"></span>
+          </button>
+          <div class="carpeta-panel" id="carpeta-compra">
+            <ul class="pie-pasos">
+              <li>Elige tu pieza y escríbenos por WhatsApp.</li>
+              <li>Te asesoramos y confirmamos la disponibilidad.</li>
+              <li>Tu joya llega en su estuche, a toda Colombia.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pie-marca">
+        <img src="assets/img/logo.png" alt="Joyería Destiny" class="pie-logo" />
+        <p class="pie-eslogan">El brillo que refleja <em>tu personalidad</em></p>
       </div>
 
       <div class="pie-base">
@@ -129,6 +197,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- Vista rápida: la pieza en grande, encima del inicio -->
+  <div id="vistaRapida" class="vista-rapida" role="dialog" aria-modal="true" aria-labelledby="vrNombre" hidden>
+    <div class="vr-fondo" data-cerrar-vr></div>
+    <div class="vr-hoja">
+      <button type="button" class="vr-cerrar" data-cerrar-vr aria-label="Cerrar y seguir viendo">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="vr-contenido"></div>
+    </div>
+  </div>
 
   <!-- WhatsApp flotante (su mensaje cambia según la colección que se está viendo) -->
   <a id="waFlotante" class="wa-flotante" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"
